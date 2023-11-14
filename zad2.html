@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form action="#">
+        <button id="Pies">Pies</button>
+        <button id="Cat">Kot</button>
+        <button id="Lew">Lew</button>
+    </form>
+    <div id="pies">
+        <img src="pes.jpg" alt="a">
+    </div>
+    <div id="cat">
+        <img src="cat.jpg" alt="a">
+    </div>
+    <div id="lew">
+        <img src="lew.jpg" alt="a">
+    </div>
+</body>
+<script>
+    const pies = document.getElementById("pies");
+    const cat = document.getElementById("cat");
+    const lew = document.getElementById("lew");
+    document.getElementById("Pies").addEventListener('click',()=>{
+        pies.style.display="block";
+        cat.style.display="none";
+        lew.style.display="none";
+    })
+    document.getElementById("Cat").addEventListener('click',()=>{
+        cat.style.display="block";
+        lew.style.display="none";
+        pies.style.display="none";
+    })
+    document.getElementById("Lew").addEventListener('click',()=>{
+        cat.style.display="none";
+        lew.style.display="block";
+        pies.style.display="none";
+    })
+</script>
+</body>
+</html>

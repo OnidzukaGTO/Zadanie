@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <button id="Pokaz">Pokaż</button>
+        <button id="Ukryj">Ukryj</button>
+    </form>
+    <div id="result">
+        <img src="mamba-czarna.jpg" alt="a">
+    </div>
+</body>
+<script>
+    const res = document.getElementById("result");
+    document.getElementById("Pokaz").addEventListener('click',()=>{
+        res.style.display="block";
+    })
+    document.getElementById("Ukryj").addEventListener('click',()=>{
+        res.style.display="none";
+    })
+</script>
+</html>
